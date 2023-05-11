@@ -6,6 +6,13 @@ import ptmk.service.PersonService;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Настройки подключения к БД находятся в файле connectionInfo.txt . Файл должен находиться в том же каталоге, что и JAR.
+ * В качестве БД использовалась PostgreSQL.
+ * Помимо основного задания добавлены аргументы запуска: 0 - удалить таблицу в БД и 6 — создать индекс.
+ * Без индексов пункт 5 выполнялся 200-250 мс. С индексами 100-120 мс.
+ */
+
 public class Main {
     public static void main(String[] args) {
         PersonService personService = new PersonService();
