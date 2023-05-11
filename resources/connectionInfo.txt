@@ -1,0 +1,4 @@
+driver=org.postgresql.Driver
+username=postgres
+password=q1w2e3asd
+url=jdbc:postgresql://localhost:5432/PTMK
